@@ -1,2 +1,2 @@
 # mood log.
-An interactive UI to log your moods. 😊
+An interactive UI to log your moods 😊
