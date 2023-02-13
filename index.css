@@ -1,0 +1,38 @@
+body {
+    background-color: indianred;
+    display: flex;
+}
+
+.main-div {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+}
+
+.form {
+    background-color: white;
+}
+
+#emoji-button {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#moodField {
+    height: 40px;
+    width: 360px;
+}
+
+#enter-btn {
+    background-color: greenyellow;
+    padding: 15px;
+}
+
+#clear-btn {
+    background-color:rgb(210, 60, 60);
+    padding: 15px;
+}
