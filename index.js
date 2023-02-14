@@ -56,5 +56,4 @@ emojiBtn.addEventListener('click', () => {
 
 clearAllBtn.addEventListener('click', () => {
     logsDiv.innerHTML = '';
-    localStorage.clear();
 });
