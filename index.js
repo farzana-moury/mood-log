@@ -12,10 +12,22 @@ let emojis = ['images/angry.png', 'images/silly.png', 'images/happy.png', 'image
 enterBtn.addEventListener('click', () => {
     const mood = document.createElement('p');
     const emoji = document.createElement('img');
+    const xBtn = document.createElement('button');
+    const container = document.createElement('form');
+
     emoji.id = 'emoji-btn';
     emoji.src = emojiBtn.src;
     mood.textContent = inputField.value;
-    logsDiv.append(emoji, mood);
+    xBtn.textContent = 'X';
+    
+    container.append(emoji, mood, xBtn);
+    logsDiv.append(container);
+
+    inputField.value = '';
+
+    xBtn.addEventListener('click', () => {
+        logsDiv.removeChild(container);
+    });
 });
 
 clearBtn.addEventListener('click', () => {
