@@ -11,14 +11,23 @@ let emojis = ['images/angry.png', 'images/silly.png', 'images/happy.png', 'image
     'images/meh.png', 'images/emo.png'];
 
 enterBtn.addEventListener('click', () => {
-    const mood = document.createElement('p');
-    const emoji = document.createElement('img');
-    const xBtn = document.createElement('button');
-    const container = document.createElement('form');
+    if(!inputField.value == ''){
+        setLog();
+    }
+    else {
+        alert('Choose an emoji and enter your mood first!');
+    }
+});
 
-    emoji.id = 'emoji-btn';
+function setLog(){
+    let mood = document.createElement('p');
+    let emoji = document.createElement('img');
+    let xBtn = document.createElement('button');
+    let container = document.createElement('div');
+
     emoji.src = emojiBtn.src;
     mood.textContent = inputField.value;
+    emoji.id = 'emoji-btn';
     xBtn.textContent = 'X';
     
     container.append(emoji, mood, xBtn);
@@ -29,7 +38,7 @@ enterBtn.addEventListener('click', () => {
     xBtn.addEventListener('click', () => {
         logsDiv.removeChild(container);
     });
-});
+}
 
 clearBtn.addEventListener('click', () => {
     inputField.value = '';
@@ -47,5 +56,5 @@ emojiBtn.addEventListener('click', () => {
 
 clearAllBtn.addEventListener('click', () => {
     logsDiv.innerHTML = '';
-    console.log(logsDiv.getElementsByClassName('container').length);
+    localStorage.clear();
 });
