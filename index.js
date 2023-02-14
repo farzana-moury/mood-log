@@ -4,6 +4,7 @@ let enterBtn = document.querySelector('#enter-btn');
 let clearBtn = document.querySelector('#clear-btn');
 let emojiBtn = document.querySelector('#emoji-btn');
 let emojiIndex = 2;
+let clearAllBtn = document.querySelector('#clear-all-btn');
 
 let emojis = ['images/angry.png', 'images/silly.png', 'images/happy.png', 'images/sick.png',
     'images/cute.png', 'images/sad.png', 'images/scared.png', 'images/lovey.png',
@@ -42,4 +43,9 @@ emojiBtn.addEventListener('click', () => {
         emojiIndex = 0;
         emojiBtn.setAttribute('src', emojis[emojiIndex]);
     }
+});
+
+clearAllBtn.addEventListener('click', () => {
+    logsDiv.innerHTML = '';
+    console.log(logsDiv.getElementsByClassName('container').length);
 });
