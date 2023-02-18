@@ -1,38 +1,104 @@
+/* elements are listed below in order of appearance in html document */
+html {
+    font-family: 'Comfortaa', cursive;
+}
+
 body {
     background-color: indianred;
-    display: flex;
 }
 
 .main-div {
-    padding: 20px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.43vh;
     background-color: white;
     text-align: center;
     height: auto;
-    width: 600px;
-    margin: auto;
+}
+
+h1 {
+    font-size: 6.09vh;
+    margin-top: 3.65vh;
+    margin-bottom: 0;
+}
+
+#clear-all-btn {
+    font-family: 'Comfortaa', cursive;
+    margin: 1.21vh;
+    border: none;
+    background-color: rgb(210, 60, 60);
+    padding: 1.21vh 3.04vh;
+    font-size: 2.43vh;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    margin: 2.43vh 2.43vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.emoji-btn {
+    width: 6.09vh;
+    height: 6.09vh;
+    vertical-align: middle;
+}
+
+#mood {
+    margin: 2.43vh 1.21vh;
+    width: 60%;
+    text-align: left;
+    word-break: break-word;
+}
+
+#xBtn {
+    border: none;
+    background-color: rgb(210, 60, 60);
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    height: 2.43vh;
+    margin-left: 3.65vh;
 }
 
 .form {
     background-color: white;
-}
-
-#emoji-btn {
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
+    margin-bottom: 3.65vh;
 }
 
 #moodField {
-    height: 40px;
-    width: 360px;
+    height: 5.48vh;
+    width: 43.84vh;
+    border: none;
+    background-color: rgb(230, 229, 229);
+    margin-bottom: 3.65vh;
+    margin-top: 1.21vh;
 }
 
 #enter-btn {
     background-color: greenyellow;
-    padding: 15px;
+    padding: 1.82vh;
+    color: green;
+    margin: 1.21vh 0;
 }
 
 #clear-btn {
     background-color:rgb(210, 60, 60);
-    padding: 15px;
+    padding: 1.82vh;
+    color: white;
+    margin: 1.21vh 0;
 }
+
+@media only screen and (max-width: 380px) {
+    .main-div {
+        width: 90%;
+    }
+    #moodField {
+        width: 90%;
+    }
+}   

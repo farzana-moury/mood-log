@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
     <script src="index.js" defer></script>
+    
     <title>Mood Log</title>
 </head>
 <body>
@@ -14,10 +20,16 @@
         <h2>how are you feeling today?</h2>
         <button id="clear-all-btn">Clear all</button>
 
-        <div class="logs"></div>
+        <div class="logs">
+            <!-- <div class="container">
+                <img src="images/happy.png" alt="happy face emoji button" class="emoji-btn">
+                <P id="mood">I am feeling retarded today.</P>
+                <button id="xBtn">x</button>
+            </div> -->
+        </div>
 
         <div class="form">
-            <img src="images/happy.png" alt="happy face emoji button" id="emoji-btn">
+            <img src="images/happy.png" alt="happy face emoji button" class="emoji-btn">
             <input type="text" required id="moodField" class="moodField">
             <span id="enter-btn">Enter</span>
             <span id="clear-btn">Clear</span>

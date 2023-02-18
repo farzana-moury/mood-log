@@ -2,7 +2,7 @@ let logsDiv = document.querySelector('.logs');
 let inputField = document.querySelector('.moodField');
 let enterBtn = document.querySelector('#enter-btn');
 let clearBtn = document.querySelector('#clear-btn');
-let emojiBtn = document.querySelector('#emoji-btn');
+let emojiBtn = document.querySelector('.emoji-btn');
 let emojiIndex = 2;
 let clearAllBtn = document.querySelector('#clear-all-btn');
 
@@ -27,8 +27,11 @@ function setLog(){
 
     emoji.src = emojiBtn.src;
     mood.textContent = inputField.value;
-    emoji.id = 'emoji-btn';
-    xBtn.textContent = 'X';
+    mood.id = 'mood'
+    emoji.className = 'emoji-btn';
+    xBtn.textContent = 'x';
+    xBtn.id = 'xBtn';
+    container.className = "container";
     
     container.append(emoji, mood, xBtn);
     logsDiv.append(container);
