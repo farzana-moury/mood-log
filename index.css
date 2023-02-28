@@ -60,7 +60,9 @@ h1 {
     background-color: rgb(210, 60, 60);
     color: white;
     font-family: 'Comfortaa', cursive;
-    height: 2.43vh;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 7px;
     margin-left: 3.65vh;
 }
 
